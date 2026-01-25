@@ -71,9 +71,9 @@
 .template-article h5,
 .template-article h6 { font-family: var(--font-family-headings); font-weight: 700; }
 
-.fuse-article-body { display: flex; gap: 30px; }
+.fuse-article-body { display: flex; flex-wrap: wrap; gap: 30px; }
 .fuse-article-aside { width: 30%; }
-.fuse-article-editor { width: calc(70% - 30px); }
+.fuse-article-editor { width: calc(70% - 30px); color: #3F4443; }
 .fuse-article-editor h1, 
 .fuse-article-editor h2, 
 .fuse-article-editor h3, 
@@ -101,7 +101,14 @@
 .fuse-article-stories .story-card-time time { display: block; padding-right: 10px; border-right: 1px solid rgba(0,0,0,0.3); }
 .fuse-article-stories .story-card-time span { display: block; padding-left: 10px; }
 
-.fuse-widget-statistics { margin-top: 30px; }
+.fuse-widget-statistics { margin-top: 30px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; }
+.fuse-widget-statistics .statistic-card { font-size: 82px; line-height: 65px; font-weight: 700; padding: 40px; border-radius: 20px; }
+.fuse-widget-statistics .statistic-card.is-primary { color: var(--white); background: var(--mindful-green-500); }
+.fuse-widget-statistics .statistic-card.is-secondary { color: #005DAA; background: #D9D9D9; }
+.fuse-widget-statistics .statistic-card.is-secondary p { color: #3F4443; }
+
+.fuse-widget-statistics .statistic-card p { margin-top: 32px; font-size: 20px; line-height: 30px; font-weight: 400; }
+
 .fuse-widget-carousel {}
 .fuse-widget-grid-gallery { margin-top: 30px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
 .fuse-widget-grid-gallery figure { display: block; position: relative; }
@@ -112,9 +119,17 @@
 .fuse-widget-accordion {}
 
 @media (max-width: 1024px) {
+  .fuse-widget-statistics { gap: 16px; }
+  .fuse-widget-statistics .statistic-card { font-size: 48px; line-height: 56px; padding: 24px; }
+  .fuse-widget-statistics .statistic-card p { margin-top: 8px; font-size: 16px; line-height: 24px; }
+
   .fuse-article-stories .stories-body { gap: 16px; }  
 }
 
 @media (max-width: 800px) {
+  .fuse-article-aside { width: 100%; }
+  .fuse-article-editor { width: 100%; }
+  .fuse-widget-statistics { grid-template-columns: repeat(1, 1fr);  }
+
   .fuse-article-stories .stories-body { grid-template-columns: repeat(1, 1fr); }  
 }
