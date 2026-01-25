@@ -76,7 +76,10 @@
 
 .fuse-article-body { display: flex; flex-wrap: wrap; gap: 30px; }
 .fuse-article-aside { width: 30%; }
-.fuse-article-editor { width: calc(70% - 30px); color: #3F4443; }
+.fuse-article-right { width: calc(70% - 30px); color: #3F4443; }
+.fuse-article-right .fuse-article-footer { margin-top: 90px; }
+.fuse-article-right .fuse-article-footer .btn-back-to-stories { display: flex; align-items: center; gap: 14px; font-size: 22px; font-weight: 600; color: var(--black); }
+
 .fuse-article-editor h1, 
 .fuse-article-editor h2, 
 .fuse-article-editor h3, 
@@ -144,12 +147,15 @@
 .fuse-widget-grid-gallery { margin-top: 30px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
 .fuse-widget-grid-gallery figure { display: block; position: relative; }
 .fuse-widget-grid-gallery figure img { margin: 0; }
-.fuse-widget-grid-gallery figcaption { position: absolute; left: 20px; right: 20px; bottom: 20px; color: var(--white); font-size: 20px; font-weight: 700; line-height: 24px; }
+.fuse-widget-grid-gallery figcaption { position: absolute; left: 20px; right: 20px; bottom: 20px; color: var(--white); font-size: 16px; font-weight: 700; line-height: 24px; }
 
 
 .fuse-widget-accordion {}
 
 @media (max-width: 1024px) {
+  .fuse-article-right .fuse-article-footer { margin-top: 56px; }
+  .fuse-article-right .fuse-article-footer .btn-back-to-stories { font-size: 16px; }
+
   .fuse-article-editor p { font-size: 16px; line-height: 24px; }
 
   .fuse-article-editor .owl-carousel .owl-dots { gap: 8px; bottom: 16px; }
@@ -159,9 +165,15 @@
   .fuse-article-editor .panel-body { padding: 0 20px 20px; font-size: 16px; line-height: 24px; }
   .fuse-article-editor .panel-icon { top: 12px; right: 0; }
 
+  .fuse-widget-grid-gallery { gap: 16px; }
+  .fuse-widget-grid-gallery { grid-template-columns: repeat(2, 1fr); }
+  .fuse-widget-grid-gallery figcaption { left: 16px; bottom: 16px; right: 16px; font-size: 16px; }
+
   .fuse-widget-statistics { gap: 16px; }
   .fuse-widget-statistics .statistic-card { font-size: 48px; line-height: 56px; padding: 24px; }
   .fuse-widget-statistics .statistic-card p { margin-top: 8px; font-size: 16px; line-height: 24px; }
+
+
 
   .fuse-article-stories { padding: 50px 0; }
   .fuse-article-stories .stories-header h3 { font-size: 28px; line-height: 42px; }
@@ -174,7 +186,7 @@
   .template-article .visible-desktop { display: none; }
 
   .fuse-article-aside { width: 100%; }
-  .fuse-article-editor { width: 100%; }
+  .fuse-article-right { width: 100%; }
   .fuse-widget-statistics { grid-template-columns: repeat(1, 1fr);  }
 
   .fuse-article-editor .owl-carousel .owl-dots { position: static; margin-top: 16px; }
