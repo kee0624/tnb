@@ -138,7 +138,7 @@
 .fuse-sustainability-aspiration .aspiration-footer li img { width: 50px; }
 
 .fuse-sustainability-indicators { padding: 160px 0 60px; }
-.fuse-sustainability-indicators .indicators-figure { display: flex; flex-wrap: wrap; gap: 20px; }
+.fuse-sustainability-indicators .indicators-content { display: flex; flex-wrap: wrap; gap: 20px; }
 .fuse-sustainability-indicators .indicators-header { width: 40%; }
 .fuse-sustainability-indicators .indicators-body { width: calc(60% - 20px); color: #3F4443; }
 .fuse-sustainability-indicators .indicators-body p { font-size: 36px; line-height: 44px; }
