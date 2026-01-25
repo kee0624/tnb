@@ -149,9 +149,10 @@
 .fuse-sustainability-pathway .pathway-body li:nth-child(3) span { margin-top: 150px; }
 .fuse-sustainability-pathway .pathway-body .pathway-card { display: flex; flex-direction: column; justify-content: space-between; padding: 40px 30px 30px; background: #D8ECD4; background-position: center; background-size: cover; border-radius: 20px; }
 .fuse-sustainability-pathway .pathway-body .pathway-card.has-bgimg { color: var(--white); }
-
 .fuse-sustainability-pathway .pathway-body li h3 { font-size: 20px; line-height: 1.2; }
 .fuse-sustainability-pathway .pathway-body li span { display: block; margin-top: 120px; font-size: 60px; font-family: var(--font-family-headings); font-weight: 700; line-height: normal; }
+
+.fuse-sustainability-practice .practice-content { padding: 80px 60px; background: #E8F8E0; border-radius: 20px; }
 
 
 .fuse-sustainability-indicators { padding: 160px 0 60px; }
