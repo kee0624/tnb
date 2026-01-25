@@ -40,7 +40,12 @@ const Carousel = {
     }
 }
 
+const ScrollSpy = {
+    init() {
+        $('body').scrollspy({ target: '.fuse-article-aside .navbar' })
+    }
+}
+
+
 Carousel.init();
-
-
-$('body').scrollspy({ target: '.navbar' })
+ScrollSpy.init();
