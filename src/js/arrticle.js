@@ -8,9 +8,9 @@ const Carousel = {
 
         $elements.each((_, element) => {
             let config = $(element).data('config') || {};
-            let $childs = $(element).find('.owl-item');
+            let $owlItems = $(element).find('.item');
             
-            if ($childs.length <= 1) {
+            if ($owlItems.length <= 1) {
                 $(element).addClass('owl-loaded').addClass('is-alone');
                 return;
             };
