@@ -106,7 +106,22 @@
 .fuse-sustainability-leading .btn { margin-top: 22px; }
 
 .fuse-sustainability-landscape { padding: 80px 0; }
-.fuse-sustainability-landscape { padding: 80px 0; }
+.fuse-sustainability-landscape .landscape-content { display: grid; grid-template-columns: repeat(2, 1fr); gap: 70px; }
+.fuse-sustainability-landscape .landscape-figure { text-align: center; color: var(--white); }
+.fuse-sustainability-landscape .landscape-figure .landscape-figure-inner { position: relative; }
+.fuse-sustainability-landscape .landscape-figure img { display: block; width: 100%; border-radius: 28px;  }
+.fuse-sustainability-landscape .landscape-figure span { display: block; position: absolute; top: 30px; left: 0; width: 100%; padding: 0 20px; }
+.fuse-sustainability-landscape .landscape-figure h3 { position: absolute; bottom: 30px; left: 0; width: 100%; padding: 0 20px; }
+.fuse-sustainability-landscape .landscape-right { display: flex; flex-direction: column; padding-top: 5%; justify-content: space-between; }
+.fuse-sustainability-landscape .landscape-header h2 { margin-bottom: 14px; font-size: 40px; line-height: 48px; }
+.fuse-sustainability-landscape .landscape-header p { font-size: 20px; line-height: 32px; color: rgba(63, 68, 67, 1); }
+.fuse-sustainability-landscape .landscape-header .btn { margin-top: 24px; }
+.fuse-sustainability-landscape .landscape-footer { margin-top: 30px; }
+.fuse-sustainability-landscape .landscape-footer ul { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.fuse-sustainability-landscape .landscape-footer li { position: relative; }
+.fuse-sustainability-landscape .landscape-footer li p { position: absolute; left: 0; bottom: 0; font-weight: 600; font-size: 16px; padding: 16px; width: 100%; color: var(--white); }
+.fuse-sustainability-landscape .landscape-footer img { display: block; width: 100%; border-radius: 20px; }
+.fuse-sustainability-landscape .landscape-footer > p { margin-top: 34px; font-size: 24px; line-height: 34px; color: rgba(63, 68, 67, 1); }
 
 .fuse-sustainability-aspiration { padding: 70px 0; color: var(--white); background: #005EAA; background: linear-gradient(180deg,rgba(0, 94, 170, 1) 0%, rgba(0, 38, 68, 1) 100%); }
 .fuse-sustainability-aspiration .badge { margin-bottom: 16px; }
@@ -123,7 +138,7 @@
 .fuse-sustainability-aspiration .aspiration-footer li img { width: 50px; }
 
 .fuse-sustainability-indicators { padding: 160px 0 60px; }
-.fuse-sustainability-indicators .indicators-content { display: flex; flex-wrap: wrap; gap: 20px; }
+.fuse-sustainability-indicators .indicators-figure { display: flex; flex-wrap: wrap; gap: 20px; }
 .fuse-sustainability-indicators .indicators-header { width: 40%; }
 .fuse-sustainability-indicators .indicators-body { width: calc(60% - 20px); color: #3F4443; }
 .fuse-sustainability-indicators .indicators-body p { font-size: 36px; line-height: 44px; }
@@ -182,6 +197,15 @@
   .fuse-sustainability-leading blockquote .blockquote-author-name { font-size: 16px; line-height: 24px; }
   .fuse-sustainability-leading blockquote .blockquote-author-position { font-size: 14px; line-height: 20px; }
 
+  .fuse-sustainability-landscape { padding: 50px 0; }
+  .fuse-sustainability-landscape .landscape-content { gap: 24px; }
+  .fuse-sustainability-landscape .landscape-header h2 { font-size: 32px; line-height: 38px; }
+  .fuse-sustainability-landscape .landscape-header p { font-size: 16px; line-height: 24px; }
+  .fuse-sustainability-landscape .landscape-footer > p { font-size: 16px; line-height: 26px; }
+  .fuse-sustainability-landscape .landscape-figure h3 { font-size: 24px; line-height: 28px; }
+  .fuse-sustainability-landscape .landscape-figure span { font-size: 16px; line-height: 24px; }
+  .fuse-sustainability-landscape .landscape-footer ul { gap: 16px; }
+  .fuse-sustainability-landscape .landscape-footer li p { padding: 14px; font-size: 12px; line-height: normal; }
 
   .fuse-sustainability-aspiration { padding: 54px 0; }
   .fuse-sustainability-aspiration h2 { font-size: 28px; line-height: 36px; }
@@ -235,11 +259,18 @@
   .fuse-sustainability-leading .leading-header { grid-column: span 1; max-width: none; }
   .fuse-sustainability-leading blockquote { margin-top: 72px; padding: 24px; background: var(--white); border-radius: 20px; box-shadow: 0 1px 3px -1px rgba(0,0,0,.4); }
 
+  .fuse-sustainability-landscape .landscape-content { grid-template-columns: repeat(1, 1fr);}
+  .fuse-sustainability-landscape .landscape-right { padding: 0; }
+  .fuse-sustainability-landscape .landscape-figure { padding: 70px 0; }
+  .fuse-sustainability-landscape .landscape-figure span { margin-top: 32px; padding: 0; position: static; color: var(--black); }
+  .fuse-sustainability-landscape .landscape-figure h3 { margin-top: 14px; padding: 0; position: static; color: rgba(0, 114, 206, 1); }
+  .fuse-sustainability-landscape .landscape-footer { margin: 0; }
+  .fuse-sustainability-landscape .landscape-footer ul { grid-template-columns: repeat(1, 1fr);}
+
   .fuse-sustainability-aspiration .aspiration-header { max-width: none; }
   .fuse-sustainability-aspiration .aspiration-body { padding-left: 0; }
   .fuse-sustainability-aspiration .aspiration-footer ul { grid-template-columns: repeat(1, 1fr); }
   .fuse-sustainability-aspiration .aspiration-footer li { padding: 16px; background: rgba(255,255,255,.1); border-radius: 15px; }
-  
 
   .fuse-sustainability-indicators .indicators-header { width: 100%; }
   .fuse-sustainability-indicators .indicators-body { width: 100%; }
