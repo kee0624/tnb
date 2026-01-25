@@ -2,10 +2,74 @@
   --mindful-green-500: #6CC24A;
   --white: #ffffff;
   --black: #000000;
+  --font-family-headings: "Tenaga", "Helvetica", "Arial", "sans-serif";
+  --font-family-base: "Myriad Pro", "Arial", "sans-serif";
+}
+
+@font-face {
+  font-family: 'Tenaga'; /* Name for your font */
+  src: url('./../../public/fonts/tenaga/Tenaga-Light.otf') format("opentype"); /* Path to font file */
+  font-weight: 400; /* Style: normal, bold, etc. */
+  font-style: normal;  /* Style: normal, italic */
+}
+
+@font-face {
+  font-family: 'Tenaga'; /* Name for your font */
+  src: url('./../../public/fonts/tenaga/Tenaga-LightItalic.otf') format("opentype"); /* Path to font file */
+  font-weight: 400; /* Style: normal, bold, etc. */
+  font-style: italic;  /* Style: normal, italic */
+}
+
+@font-face {
+  font-family: 'Tenaga'; /* Name for your font */
+  src: url('./../../public/fonts/tenaga/Tenaga-Regular.otf') format("opentype"); /* Path to font file */
+  font-weight: 500; /* Style: normal, bold, etc. */
+  font-style: normal;  /* Style: normal, italic */
+}
+
+@font-face {
+  font-family: 'Tenaga'; /* Name for your font */
+  src: url('./../../public/fonts/tenaga/Tenaga-RegularItalic.otf') format("opentype"); /* Path to font file */
+  font-weight: 500; /* Style: normal, bold, etc. */
+  font-style: italic;  /* Style: normal, italic */
+}
+
+@font-face {
+  font-family: 'Tenaga'; /* Name for your font */
+  src: url('./../../public/fonts/tenaga/Tenaga-Condensed.otf') format("opentype"); /* Path to font file */
+  font-weight: 600; /* Style: normal, bold, etc. */
+  font-style: normal;  /* Style: normal, italic */
+}
+
+
+@font-face {
+  font-family: 'Tenaga'; /* Name for your font */
+  src: url('./../../public/fonts/tenaga/Tenaga-Bold.otf') format("opentype"); /* Path to font file */
+  font-weight: 700; /* Style: normal, bold, etc. */
+  font-style: normal;  /* Style: normal, italic */
+}
+
+@font-face {
+  font-family: 'Tenaga'; /* Name for your font */
+  src: url('./../../public/fonts/tenaga/Tenaga-BoldItalic.otf') format("opentype"); /* Path to font file */
+  font-weight: 700; /* Style: normal, bold, etc. */
+  font-style: italic;  /* Style: normal, italic */
 }
 
 .template-article { color: var(--black); font-size: 20px; line-height: 32px; }
+.template-article p,
+.template-article ul,
+.template-article li,
+.template-article span,
+.template-article a,
+.template-article button { font-family: var(--font-family-base); }
 
+.template-article h1,
+.template-article h2,
+.template-article h3,
+.template-article h4,
+.template-article h5,
+.template-article h6 { font-family: var(--font-family-headings); font-weight: 700; }
 
 .fuse-article-body { display: flex; gap: 30px; }
 .fuse-article-aside { width: 30%; }
