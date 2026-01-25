@@ -74,6 +74,21 @@
 .template-article .visible-mobile { display: none; }
 .template-article .visible-desktop { display: block; }
 
+.template-article .owl-carousel { margin-top: 30px; }
+.template-article .owl-stage-outer { border-radius: 20px; }
+.template-article .owl-carousel img { margin-top: 0; border-radius: 0; }
+.template-article .owl-carousel .owl-dots { display: flex; gap: 15px; justify-content: center; width: 100%; position: absolute; bottom: 30px; left: 0; }
+.template-article .owl-carousel .owl-dots button { width: 15px; height: 15px; background: #D9D9D9; border-radius: 1000px; }
+.template-article .owl-carousel .owl-dots button.active { background: var(--mindful-green-500); }
+.template-article .owl-carousel .owl-nav { position: absolute; right: 0; bottom: 0; display: flex; gap: 15px; justify-content: flex-end; }
+.template-article .owl-carousel button.owl-prev,
+.template-article .owl-carousel button.owl-next { display: flex; justify-content: center; align-items: center; width: 42px; height: 42px; background: #005EAA; border-radius: 1000px; border: 1px solid #005EAA; }
+.template-article .owl-carousel button.disabled { cursor: not-allowed; background: var(--white); opacity: .6; }
+.template-article .owl-carousel button.disabled svg path { stroke: #005EAA; }
+.template-article .owl-carousel button svg { width: 8px;}
+.template-article .owl-carousel button svg path { stroke: var(--white); }
+.template-article .owl-carousel button.owl-next { transform: rotate(180deg); }
+
 .fuse-article-body { display: flex; flex-wrap: wrap; gap: 30px; }
 .fuse-article-aside { width: 30%; }
 .fuse-article-right { width: calc(70% - 30px); color: #3F4443; }
@@ -96,13 +111,6 @@
 .fuse-article-editor h3 { font-size: 26px; line-height: 20px; font-weight: 600; }
 .fuse-article-editor p { margin-top: 30px; }
 .fuse-article-editor img { margin-top: 30px; display: block; border-radius: 20px; width: 100%; }
-
-.fuse-article-editor .owl-carousel { margin-top: 30px; }
-.fuse-article-editor .owl-stage-outer { border-radius: 20px; }
-.fuse-article-editor .owl-carousel img { margin-top: 0; border-radius: 0; }
-.fuse-article-editor .owl-carousel .owl-dots { display: flex; gap: 15px; justify-content: center; width: 100%; position: absolute; bottom: 30px; left: 0; }
-.fuse-article-editor .owl-carousel .owl-dots button { width: 15px; height: 15px; background: #D9D9D9; border-radius: 1000px; }
-.fuse-article-editor .owl-carousel .owl-dots button.active { background: var(--mindful-green-500); }
 
 .fuse-article-editor .panel-group { max-width: 710px; }
 .fuse-article-editor .panel-group { margin-top: 30px; }
@@ -150,7 +158,14 @@
 .fuse-widget-grid-gallery figcaption { position: absolute; left: 20px; right: 20px; bottom: 20px; color: var(--white); font-size: 16px; font-weight: 700; line-height: 24px; }
 
 .fuse-article-blockquotes { padding: 224px 0 0; }
-
+.fuse-article-blockquotes .blockquote-body p { font-size: 38px; line-height: 46px; }
+.fuse-article-blockquotes .owl-carousel { margin-top: 20px; }
+.fuse-article-blockquotes .blockquote-footer { padding-right: 120px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 34px; padding-top: 34px; border-top: 1px solid #97D695; }
+.fuse-article-blockquotes .blockquote-footer-img { width: 52px; height: 52px; border-radius: 1000px; overflow: hidden; }
+.fuse-article-blockquotes .blockquote-author-name { font-weight: 700; font-size: 18px; line-height: normal; }
+.fuse-article-blockquotes .blockquote-author-position { margin-top: 4px; font-size: 16px; line-height: normal; opacity: .6; }
+.fuse-article-blockquotes .blockquote-footer-right { width: calc(100% - 64px); }
+.fuse-article-blockquotes .owl-carousel .owl-nav { bottom: 6px; }
 
 @media (max-width: 1024px) {
   .fuse-article-right .fuse-article-footer { margin-top: 56px; }
@@ -173,8 +188,11 @@
   .fuse-widget-statistics .statistic-card { font-size: 48px; line-height: 56px; padding: 24px; }
   .fuse-widget-statistics .statistic-card p { margin-top: 8px; font-size: 16px; line-height: 24px; }
 
-
   .fuse-article-blockquotes { padding: 150px 0; }
+  .fuse-article-blockquotes .blockquote-body p { font-size: 26px; line-height: 32px; }
+  .fuse-article-blockquotes .blockquotes-quote-img { width: 80px; }
+  .fuse-article-blockquotes .blockquote-footer { padding-right: 0; }
+  .fuse-article-blockquotes .owl-carousel .owl-nav { margin-top: 40px; position: static; }
 
   .fuse-article-stories { padding: 50px 0; }
   .fuse-article-stories .stories-header h3 { font-size: 28px; line-height: 42px; }

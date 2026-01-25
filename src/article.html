@@ -37,7 +37,19 @@
                 This process relies on countless components, each playing a critical role. Among the most important are steam valves, which regulate the flow and pressure of steam within turbines. As is the case with any machinery, these valves are subjected to extreme temperatures and pressure which can become prone to wear and tear. Even with regular maintenance, these items can deteriorate over time, with leaks and other issues developing.
               </p>
 
-              <div class="owl-carousel owl-theme">
+              <div 
+                class="owl-carousel owl-theme"
+                data-config='{
+                  "loop": true,
+                  "margin": 0,
+                  "nav": false,
+                  "responsive": {
+                    "0": {
+                      "items": 1
+                    }
+                  }
+                }'
+              >
                 <div class="item"><img src="https://placehold.co/940x400/000/31343C" /></div>
                 <div class="item"><img src="https://placehold.co/940x400/000/31343C" /></div>
               </div>
@@ -186,26 +198,68 @@
             </div>
 
             <div class="fuse-article-blockquotes">
-              <blockquote class="blockquote">
-                <div class="blockquote-body">
-                  <p>
-                    "TNB's commitment to continuous improvement
-                  and sustainability is evident in initiatives like this.
-                  As a long-term industrial customer, we value partners who prioritize both reliability and environmental responsibility in their operations."
-                  </p>
+              <img src="/public/images/icon-open-quote.png" alt="" class="blockquotes-quote-img" />
+              <!-- must use single quote for the config to get the dynamic config -->
+              <div 
+                class="owl-carousel owl-theme" 
+                data-config='{
+                  "loop": false,
+                  "margin": 0,
+                  "nav": true,
+                  "dots": false,
+                  "responsive": {
+                    "0": {
+                      "items": 1
+                    }
+                  }
+                }'
+              >
+                <div class="item">
+                  <blockquote class="blockquote">
+                    <div class="blockquote-body">
+                      <p>
+                        TNB's commitment to continuous improvement
+                        and sustainability is evident in initiatives like this.
+                        As a long-term industrial customer, we value partners who prioritize both reliability and environmental responsibility in their operations.
+                      </p>
+                    </div>
+
+                    <div class="blockquote-footer">
+                      <div class="blockquote-footer-img">
+                        <img src="https://placehold.co/54x54/000/31343C" alt="" />
+                      </div>
+                      
+                      <div class="blockquote-footer-right">
+                        <div class="blockquote-author-name">James Tan</div>
+                        <div class="blockquote-author-position">Head of Operations, Malaysian Manufacturing Corp</div>
+                      </div>
+                    </div>
+                  </blockquote>
                 </div>
 
-                <div class="blockquote-footer">
-                  <div class="blockquote-footer-img">
-                    <img src="" alt="" />
-                  </div>
-                  
-                  <div class="blockquote-footer-right">
-                    <div class="blockquote-author-name">James Tan</div>
-                    <div class="blockquote-author-position">Head of Operations, Malaysian Manufacturing Corp</div>
-                  </div>
+                <div class="item">
+                  <blockquote class="blockquote">
+                    <div class="blockquote-body">
+                      <p>
+                        "TNB's commitment to continuous improvement
+                      and sustainability is evident in initiatives like this.
+                      As a long-term industrial customer, we value partners who prioritize both reliability and environmental responsibility in their operations."
+                      </p>
+                    </div>
+
+                    <div class="blockquote-footer">
+                      <div class="blockquote-footer-img">
+                        <img src="https://placehold.co/54x54/000/31343C" alt="" />
+                      </div>
+                      
+                      <div class="blockquote-footer-right">
+                        <div class="blockquote-author-name">James Tan</div>
+                        <div class="blockquote-author-position">Head of Operations, Malaysian Manufacturing Corp</div>
+                      </div>
+                    </div>
+                  </blockquote>
                 </div>
-              </blockquote>
+              </div>
             </div>
           </div>
           <!-- content -->
