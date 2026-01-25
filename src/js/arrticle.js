@@ -41,3 +41,6 @@ const Carousel = {
 }
 
 Carousel.init();
+
+
+$('body').scrollspy({ target: '.navbar' })
