@@ -1,0 +1,250 @@
+:root {
+  --mindful-green-500: #6CC24A;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+.template-sustainability { color: var(--black); font-size: 20px; line-height: 32px; }
+.template-sustainability .is-mobile { display: none; }
+.template-sustainability .is-desktop { display: block; }
+.template-sustainability .btn { padding: 12px 32px; font-size: 20px; font-weight: 600; border: 0; border-radius: 1000px; }
+.template-sustainability .btn-dark { color: var(--white); background: var(--black); }
+.template-sustainability .btn-default { background: var(--white); }
+
+.template-sustainability .badge { padding: 14px 24px; font-size: 20px; font-weight: 700; border-radius: 1000px; }
+.template-sustainability .badge-primary { color: #4C8D2B; background: rgba(142, 221, 101, 0.3); }
+.template-sustainability .badge-secondary { color: var(--white); background: rgba(142, 221, 101, 0.3); }
+
+.fuse-sustainability-hero img { width: 100%; display: block; border-radius: 0 0 20px 20px; }
+.fuse-sustainability-hero h2 { font-size: 82px; font-weight: 700; line-height: 95px; }
+.fuse-sustainability-hero .hero-content { display: flex; flex-wrap: wrap; gap: 20px; width: 100%; padding: 76px 0; align-items: center; }
+.fuse-sustainability-hero .hero-header { width: calc(100% - 440px - 20px); }
+.fuse-sustainability-hero .hero-header small { display: block; margin-bottom: 22px; font-size: 26px; font-weight: 700; line-height: 20px; color: var(--mindful-green-500); }
+.fuse-sustainability-hero .hero-body { width: 440px; text-align: right; }
+.fuse-sustainability-hero .btn { margin-top: 36px; }
+
+.fuse-sustainability-video-leading { background: #FFFFFF; background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(142, 221, 101, .2) 100%);}
+.fuse-sustainability-video .video { padding-top: 36%; background: var(--mindful-green-500); border-radius: 20px; }
+
+.fuse-sustainability-leading { padding: 94px 0; }
+.fuse-sustainability-leading .badge { margin-bottom: 16px;}
+.fuse-sustainability-leading h2 { font-size: 60px; font-weight: 600; line-height: 66px; }
+.fuse-sustainability-leading blockquote p { font-size: 24px; line-height: 34px; }
+.fuse-sustainability-leading blockquote .blockquote-body { color: #3F4443; }
+.fuse-sustainability-leading blockquote .blockquote-author { display: flex; align-items: center; gap: 20px; margin-top: 20px; }
+.fuse-sustainability-leading blockquote .blockquote-author-name { display: block; font-size: 28px; font-weight: 700; }
+.fuse-sustainability-leading blockquote .blockquote-author-position { display: block; font-size: 22px; font-weight: 700; }
+.fuse-sustainability-leading blockquote img { width: 86px; height: 86px; border-radius: 1000px; border: 4px solid var(--white); }
+.fuse-sustainability-leading .leading-content { display: grid; grid-template-columns: repeat(2, 1fr); gap: 50px; align-items: center; }
+.fuse-sustainability-leading .leading-header { grid-column: span 2; max-width: 70%; }
+.fuse-sustainability-leading .btn { margin-top: 22px; }
+
+.fuse-sustainability-landscape { padding: 80px 0; }
+.fuse-sustainability-landscape { padding: 80px 0; }
+
+.fuse-sustainability-aspiration { padding: 70px 0; color: var(--white); background: #005EAA; background: linear-gradient(180deg,rgba(0, 94, 170, 1) 0%, rgba(0, 38, 68, 1) 100%); }
+.fuse-sustainability-aspiration .badge { margin-bottom: 16px; }
+.fuse-sustainability-aspiration h2 { font-size: 48px; font-weight: 700; line-height: 58px; }
+.fuse-sustainability-aspiration .aspiration-header { max-width: 70%; }
+.fuse-sustainability-aspiration .aspiration-body { margin-top: 24px; padding-left: 50%; display: grid; grid-template-columns: repeat(2, 1fr); gap: 50px; }
+.fuse-sustainability-aspiration .aspiration-body img { width: 48px; height: 48px; object-fit: contain; }
+.fuse-sustainability-aspiration .aspiration-body h3 { margin-top: 48px; font-size: 28px; font-weight: 700; line-height: 32px; }
+.fuse-sustainability-aspiration .aspiration-body p { margin-top: 8px; color: rgba(255, 255, 255, 0.6); font-size: 20px; line-height: 32px; }
+.fuse-sustainability-aspiration .aspiration-footer { margin-top: 84px; }
+.fuse-sustainability-aspiration .aspiration-footer h4 { font-size: 26px; font-weight: 700; color: var(--mindful-green-500); }
+.fuse-sustainability-aspiration .aspiration-footer ul { list-style: none; padding: 0; margin: 40px 0 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+.fuse-sustainability-aspiration .aspiration-footer li { display: flex; align-items: center; gap: 14px; font-size: 14px; font-weight: 700; }
+.fuse-sustainability-aspiration .aspiration-footer li img { width: 50px; }
+
+.fuse-sustainability-indicators { padding: 160px 0 60px; }
+.fuse-sustainability-indicators .indicators-content { display: flex; flex-wrap: wrap; gap: 20px; }
+.fuse-sustainability-indicators .indicators-header { width: 40%; }
+.fuse-sustainability-indicators .indicators-body { width: calc(60% - 20px); font-size: 36px; line-height: 44px; color: #3F4443; }
+.fuse-sustainability-indicators .indicators-number { margin-top: 16px; }
+.fuse-sustainability-indicators .indicators-number strong { display: block; color: #005BAC; font-size: 136px; font-weight: 700; line-height: 200px; }
+.fuse-sustainability-indicators .indicators-number small { display: block; font-size: 20px; line-height: 20px; color: #9D9D9D; }
+.fuse-sustainability-indicators h2 { font-size: 48px; font-weight: 700; line-height: 58px; }
+.fuse-sustainability-indicators .indicators-footer { margin-top: 50px; font-size: 20px; line-height: 20px; color: #9D9D9D; }
+.fuse-sustainability-indicators .indicators-footer ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 25px; }
+.fuse-sustainability-indicators .indicators-footer img { display: block; max-width: 100%; }
+.fuse-sustainability-indicators .indicators-footer p { margin-top: 30px; }
+
+.fuse-sustainability-reports { padding: 60px 0; }
+.fuse-sustainability-reports h3 { margin-bottom: 30px; width: 50%; font-size: 34px; font-weight: 600; }
+.fuse-sustainability-reports .reports-content { display: flex; flex-direction: column; justify-content: space-between; min-height: 380px; padding: 50px 45px; color: var(--white); background: #004A3A; border-radius: 20px; }
+
+@media (max-width: 1024px) {
+  .template-sustainability { font-size: 16px; line-height: 24px; }
+  .template-sustainability .btn { padding: 12px 24px; font-size: 18px; line-height: 24px; }
+  .template-sustainability .badge { padding: 8px 16px; font-size: 16px; }
+  
+  .fuse-sustainability-hero h2 { font-size: 32px; line-height: 38px; }
+  .fuse-sustainability-hero .hero-content { padding: 48px 0; gap: 20px; }
+  .fuse-sustainability-hero .hero-header small { margin-bottom: 6px; font-size: 18px; line-height: 28px; }
+  .fuse-sustainability-hero .btn { margin-top: 20px; }
+
+  .fuse-sustainability-leading { padding: 50px 0; }
+  .fuse-sustainability-leading h2 { font-size: 28px; line-height: 36px; }
+  .fuse-sustainability-leading .btn { margin-top: 18px; }
+  .fuse-sustainability-leading .leading-header { margin-bottom: 8px; }
+  .fuse-sustainability-leading .leading-content { gap: 0; }
+  .fuse-sustainability-leading blockquote p { font-size: 18px; line-height: 30px; }
+  .fuse-sustainability-leading blockquote img { width: 64px; height: 64px; }
+  .fuse-sustainability-leading blockquote .blockquote-author { gap: 16px; }
+  .fuse-sustainability-leading blockquote .blockquote-author-name { font-size: 16px; line-height: 24px; }
+  .fuse-sustainability-leading blockquote .blockquote-author-position { font-size: 14px; line-height: 20px; }
+
+
+  .fuse-sustainability-aspiration { padding: 54px 0; }
+  .fuse-sustainability-aspiration h2 { font-size: 28px; line-height: 36px; }
+  .fuse-sustainability-aspiration .aspiration-body { margin-top: 48px; grid-template-columns: repeat(1, 1fr); gap: 40px; }
+  .fuse-sustainability-aspiration .aspiration-body h3 { margin-top: 16px; font-size: 20px; line-height: 28px; }
+  .fuse-sustainability-aspiration .aspiration-body p { font-size: 16px; line-height: 24px; }
+  .fuse-sustainability-aspiration .aspiration-footer { margin-top: 98px; }
+  .fuse-sustainability-aspiration .aspiration-footer h4 { font-size: 18px; line-height: 20px; }
+  .fuse-sustainability-aspiration .aspiration-footer ul { margin-top: 24px; grid-template-columns: repeat(1, 1fr); }
+}
+
+@media (max-width: 850px) {
+  .template-sustainability .is-mobile { display: block; }
+  .template-sustainability .is-desktop { display: none; }
+
+  .fuse-sustainability-hero img { border-radius: 0; }
+  .fuse-sustainability-hero .hero-banner { position: relative; }
+  .fuse-sustainability-hero .hero-header { position: absolute; bottom: 0; width: 100%; padding: 0 0 30px; }
+  .fuse-sustainability-hero .hero-content { padding: 0; gap: 0; }
+  .fuse-sustainability-hero .hero-body { padding-top: 20px; width: 100%; text-align:left; }
+  .fuse-sustainability-hero h2 { color: var(--white); }
+
+  .fuse-sustainability-video { padding: 32px 0; }
+  .fuse-sustainability-leading { padding: 30px 0 22px; }
+  .fuse-sustainability-leading .leading-content { grid-template-columns: repeat(1, 1fr); }
+  .fuse-sustainability-leading .leading-header { grid-column: span 1; max-width: none; }
+  .fuse-sustainability-leading blockquote { margin-top: 72px; padding: 24px; background: var(--white); border-radius: 20px; box-shadow: 0 1px 3px -1px rgba(0,0,0,.4); }
+
+  .fuse-sustainability-aspiration .aspiration-header { max-width: none; }
+  .fuse-sustainability-aspiration .aspiration-body { padding-left: 0; }
+  .fuse-sustainability-aspiration .aspiration-footer ul { grid-template-columns: repeat(1, 1fr); }
+  .fuse-sustainability-aspiration .aspiration-footer li { padding: 16px; background: rgba(255,255,255,.1); border-radius: 15px; }
+  
+
+  .fuse-sustainability-indicators .indicators-header { width: 100%; }
+  .fuse-sustainability-indicators .indicators-body { width: 100%; }
+  .fuse-sustainability-indicators .indicators-footer ul { gap: 0; row-gap: 16px; }
+  .fuse-sustainability-indicators .indicators-footer li { width: 50%; }
+  .fuse-sustainability-indicators .indicators-footer li img { margin: 0 auto; }
+}
+
+/* 
+
+
+.home-landscape {
+  padding: 56px 0;
+  background: lightgray;
+
+  .landscape-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+
+    @include media-breakpoint-up(md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .landscape-figure {
+    img {
+      display: block;
+      width: 100%;
+      border-radius: 20px;
+    }
+  }
+
+  .landscape-body {
+    @include media-breakpoint-up(md) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  .landscape-header {
+    @include media-breakpoint-up(lg) {
+      margin-top: 10%;
+    }
+  }
+
+  .landscape-footer {
+    margin: 5% 0;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      font-weight: $font-weight-semibold;
+
+      @include media-breakpoint-up(md) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+}
+
+.home-aspiration {
+  padding: 56px 0;
+  color: $white;
+  background: blue;
+
+  .badge {
+    margin-bottom: 16px;
+  }
+
+  .aspiration-body {
+    @include media-breakpoint-up(md) {
+      margin-left: 50%;
+      width: 50%;
+    }
+  }
+
+  .aspiration-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+
+    @include media-breakpoint-up(lg) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .aspiration-footer {
+    margin-top: 40px;
+  
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      font-weight: $font-weight-semibold;
+
+      @include media-breakpoint-up(md) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    li {
+      padding: 16px;
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 10px;
+
+      @include media-breakpoint-up(md) {
+        padding: 0;
+        background: none;
+      }
+    }
+  }
+} */
