@@ -137,6 +137,23 @@
 .fuse-sustainability-aspiration .aspiration-footer li { display: flex; align-items: center; gap: 14px; font-size: 14px; font-weight: 700; }
 .fuse-sustainability-aspiration .aspiration-footer li img { width: 50px; }
 
+.fuse-sustainability-pathway { padding: 110px 0 150px; }
+.fuse-sustainability-pathway .pathway-header { max-width: 700px; }
+.fuse-sustainability-pathway h2 { font-size: 48px; line-height: 58px; }
+.fuse-sustainability-pathway p { margin-top: 24px; font-size: 20px; line-height: 32px; }
+.fuse-sustainability-pathway .pathway-body { margin-top: 150px; padding-left: 20%; }
+.fuse-sustainability-pathway .pathway-body ul { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+.fuse-sustainability-pathway .pathway-body li:nth-child(2) { margin-top: -130px; }
+.fuse-sustainability-pathway .pathway-body li:nth-child(3) { margin-top: -40px; }
+.fuse-sustainability-pathway .pathway-body li:nth-child(2) span { margin-top: 160px; }
+.fuse-sustainability-pathway .pathway-body li:nth-child(3) span { margin-top: 150px; }
+.fuse-sustainability-pathway .pathway-body .pathway-card { display: flex; flex-direction: column; justify-content: space-between; padding: 40px 30px 30px; background: #D8ECD4; background-position: center; background-size: cover; border-radius: 20px; }
+.fuse-sustainability-pathway .pathway-body .pathway-card.has-bgimg { color: var(--white); }
+
+.fuse-sustainability-pathway .pathway-body li h3 { font-size: 20px; line-height: 1.2; }
+.fuse-sustainability-pathway .pathway-body li span { display: block; margin-top: 120px; font-size: 60px; font-family: var(--font-family-headings); font-weight: 700; line-height: normal; }
+
+
 .fuse-sustainability-indicators { padding: 160px 0 60px; }
 .fuse-sustainability-indicators .indicators-content { display: flex; flex-wrap: wrap; gap: 20px; }
 .fuse-sustainability-indicators .indicators-header { width: 40%; }
@@ -216,6 +233,14 @@
   .fuse-sustainability-aspiration .aspiration-footer h4 { font-size: 18px; line-height: 20px; }
   .fuse-sustainability-aspiration .aspiration-footer ul { margin-top: 24px; grid-template-columns: repeat(1, 1fr); }
 
+  .fuse-sustainability-pathway { padding: 46px 0; }
+  .fuse-sustainability-pathway h2 { font-size: 28px; line-height: 36px; }
+  .fuse-sustainability-pathway p { font-size: 16px; line-height: 24px; }
+  .fuse-sustainability-pathway .pathway-body { padding-left: 0; }
+  .fuse-sustainability-pathway .pathway-body .pathway-card { padding: 24px; }
+  .fuse-sustainability-pathway .pathway-body li h3 { font-size: 16px; line-height: 24px; }
+  .fuse-sustainability-pathway .pathway-body li span { font-size: 48px; line-height: 72px; }
+
   .fuse-sustainability-indicators { padding: 50px 0 0; }
   .fuse-sustainability-indicators h2 { font-size: 28px; line-height: 32px; }
   .fuse-sustainability-indicators .indicators-body p { font-size: 16px; line-height: 24px; }
@@ -272,6 +297,14 @@
   .fuse-sustainability-aspiration .aspiration-footer ul { grid-template-columns: repeat(1, 1fr); }
   .fuse-sustainability-aspiration .aspiration-footer li { padding: 16px; background: rgba(255,255,255,.1); border-radius: 15px; }
 
+  .fuse-sustainability-pathway .pathway-body { margin-top: 32px; }
+  .fuse-sustainability-pathway .pathway-body ul { grid-template-columns: repeat(1, 1fr); }
+  .fuse-sustainability-pathway .pathway-body li:nth-child(2) { margin: 0; }
+  .fuse-sustainability-pathway .pathway-body li:nth-child(3) { margin: 0; }
+  .fuse-sustainability-pathway .pathway-body .pathway-card { flex-direction: column-reverse; }
+  .fuse-sustainability-pathway .pathway-body li h3 { margin-top: 16px; }
+  .fuse-sustainability-pathway .pathway-body li span { margin: 0; }
+
   .fuse-sustainability-indicators .indicators-header { width: 100%; }
   .fuse-sustainability-indicators .indicators-body { width: 100%; }
   .fuse-sustainability-indicators .indicators-footer ul { gap: 0; row-gap: 16px; }
@@ -286,118 +319,3 @@
   .fuse-sustainability-framework .framework-content { padding: 0; border: 0; }
   .fuse-sustainability-framework .framework-body { padding: 26px; border: 3px solid rgba(108, 194, 74, 0.6); border-radius: 20px; }
 }
-
-
-/* 
-
-
-.home-landscape {
-  padding: 56px 0;
-  background: lightgray;
-
-  .landscape-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 32px;
-
-    @include media-breakpoint-up(md) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  .landscape-figure {
-    img {
-      display: block;
-      width: 100%;
-      border-radius: 20px;
-    }
-  }
-
-  .landscape-body {
-    @include media-breakpoint-up(md) {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-  }
-
-  .landscape-header {
-    @include media-breakpoint-up(lg) {
-      margin-top: 10%;
-    }
-  }
-
-  .landscape-footer {
-    margin: 5% 0;
-
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 16px;
-      font-weight: $font-weight-semibold;
-
-      @include media-breakpoint-up(md) {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-  }
-}
-
-.home-aspiration {
-  padding: 56px 0;
-  color: $white;
-  background: blue;
-
-  .badge {
-    margin-bottom: 16px;
-  }
-
-  .aspiration-body {
-    @include media-breakpoint-up(md) {
-      margin-left: 50%;
-      width: 50%;
-    }
-  }
-
-  .aspiration-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 32px;
-
-    @include media-breakpoint-up(lg) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  .aspiration-footer {
-    margin-top: 40px;
-  
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 16px;
-      font-weight: $font-weight-semibold;
-
-      @include media-breakpoint-up(md) {
-        grid-template-columns: repeat(4, 1fr);
-      }
-    }
-
-    li {
-      padding: 16px;
-      background: rgba(255, 255, 255, 0.5);
-      border-radius: 10px;
-
-      @include media-breakpoint-up(md) {
-        padding: 0;
-        background: none;
-      }
-    }
-  }
-} */
