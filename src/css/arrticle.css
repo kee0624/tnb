@@ -101,8 +101,24 @@
 .fuse-article-editor .owl-carousel .owl-dots button { width: 15px; height: 15px; background: #D9D9D9; border-radius: 1000px; }
 .fuse-article-editor .owl-carousel .owl-dots button.active { background: var(--mindful-green-500); }
 
+.fuse-article-editor .panel-group { max-width: 710px; }
 .fuse-article-editor .panel-group { margin-top: 30px; }
-
+.fuse-article-editor .panel-group .panel-heading+.panel-collapse>.panel-body { border-top: 0; }
+.fuse-article-editor .panel { margin: 0; border: 0; box-shadow: none; border-radius: 0; }
+.fuse-article-editor .panel + .panel { margin: 0; }
+.fuse-article-editor .panel-heading { padding: 0; border: 0; border-radius: 0; background: none; }
+.fuse-article-editor .panel-title a { position: relative; display: block; padding: 20px 50px 20px 30px; font-size: 24px; font-weight: 600; transition: .3s; font-family: var(--font-family-base); border-left: 8px solid #9063CD;  color: #9063CD; text-decoration: none; }
+.fuse-article-editor .panel-title a.collapsed { border-left: 8px solid rgba(187, 0, 255, 0.3); transition: .3s; }
+.fuse-article-editor .panel-icon { position: absolute; right: 0; top: 20px; display: block; width: 30px; height: 30px; background: var(--black); border-radius: 1000px; }
+.fuse-article-editor .panel-icon img { margin: 0; position: absolute; left: 50%; top: 50%; width: 16px; height: 16px; transform: translate(-50%, -50%); }
+.fuse-article-editor .panel-icon img:first-child { display: block; }
+.fuse-article-editor .panel-icon img:nth-child(2) { display: none; }
+.fuse-article-editor .panel-title a.collapsed .panel-icon { background: #F3F4F8; }
+.fuse-article-editor .panel-title a.collapsed .panel-icon img:first-child { display: none; }
+.fuse-article-editor .panel-title a.collapsed .panel-icon img:nth-child(2) { display: block; }
+.fuse-article-editor .panel-body { padding: 0 30px 40px; font-size: 18px; border: 0;  }
+.fuse-article-editor .panel-collapse { border-left: 8px solid rgba(187, 0, 255, 0.3); transition: .3s; }
+.fuse-article-editor .panel-collapse.in { border-left: 8px solid #9063CD; transition: .3s; }
 
 .fuse-article-stories { padding: 160px 0; }
 .fuse-article-stories .stories-header h3 { font-size: 40px; font-weight: 700; line-height: 46px; color: #4C8D2B; }
@@ -138,6 +154,10 @@
 
   .fuse-article-editor .owl-carousel .owl-dots { gap: 8px; bottom: 16px; }
   .fuse-article-editor .owl-carousel .owl-dots button { width: 8px; height: 8px; }
+
+  .fuse-article-editor .panel-title a { padding: 14px 60px 14px 20px; font-size: 20px; line-height: 26px; }
+  .fuse-article-editor .panel-body { padding: 0 20px 20px; font-size: 16px; line-height: 24px; }
+  .fuse-article-editor .panel-icon { top: 12px; right: 0; }
 
   .fuse-widget-statistics { gap: 16px; }
   .fuse-widget-statistics .statistic-card { font-size: 48px; line-height: 56px; padding: 24px; }
