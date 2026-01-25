@@ -1,4 +1,7 @@
 import '../css/sustainability.css';
 
-// Import all of Bootstrap's JS
-// import * as bootstrap from 'bootstrap'
+$('#videoModal').on('hidden.bs.modal', function () {
+  const $iframe = $(this).find('iframe');
+  const src = $iframe.attr('src');
+  $iframe.attr('src', src);
+});

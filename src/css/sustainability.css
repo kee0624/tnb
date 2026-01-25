@@ -90,7 +90,17 @@
 .fuse-sustainability-hero .btn { margin-top: 36px; }
 
 .fuse-sustainability-video-leading { background: #FFFFFF; background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(142, 221, 101, .2) 100%);}
-.fuse-sustainability-video .video { padding-top: 36%; background: var(--mindful-green-500); border-radius: 20px; }
+.fuse-sustainability-video .video { cursor: pointer; position: relative; overflow: hidden; background: var(--mindful-green-500); border-radius: 20px;  }
+.fuse-sustainability-video .video .video-placeholder { display: block; width: 100%; }
+.fuse-sustainability-video .video .icon-play { position: absolute; left: 50%; top: 50%; width: 120px; transform: translate(-50%, -50%); }
+
+#videoModal .modal-header { padding: 0; border: 0; min-height: 0; }
+#videoModal .close { color: var(--white); text-shadow: none; z-index: 1; position: absolute; right: -20px; top: -20px; width: 40px; height: 40px; background: var(--black); opacity: 100; border-radius: 1000px; }
+#videoModal .modal-content { border: 0; }
+#videoModal .modal-dialog { margin: 30px auto; max-width: 1170px; width: 100%; padding: 0 15px; }
+#videoModal .modal-body { padding: 0; }
+#videoModal .modal-body .iframe-video { position: relative; padding-top: 56.6%; width: 100%; }
+#videoModal .modal-body .iframe-video iframe { position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: block; border: 0; }
 
 .fuse-sustainability-leading { padding: 94px 0; }
 .fuse-sustainability-leading .badge { margin-bottom: 16px;}
@@ -203,6 +213,10 @@
   .fuse-sustainability-hero .hero-content { padding: 48px 0; gap: 20px; }
   .fuse-sustainability-hero .hero-header small { margin-bottom: 6px; font-size: 18px; line-height: 28px; }
   .fuse-sustainability-hero .btn { margin-top: 20px; }
+
+  .fuse-sustainability-video .video .icon-play { width: 80px; }
+
+  #videoModal .close { width: 34px; height: 34px; top: -17px; right: 10px; }
 
   .fuse-sustainability-leading { padding: 50px 0; }
   .fuse-sustainability-leading h2 { font-size: 28px; line-height: 36px; }
