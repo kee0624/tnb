@@ -188,7 +188,9 @@
 .fuse-article-stories .story-card-thumbnail { position: relative; }
 .fuse-article-stories .story-card-badge { position: absolute; right: 20px; bottom: 20px; display: inline-block; font-size: 12px; line-height: normal; padding: 8px 16px; color: var(--black); background: #97D695; border-radius: 1000px; }
 
-.fuse-widget-table .table-content { margin-top: 30px; overflow: auto; border: 1px solid #6D6D6D; border-radius: 20px; }
+.fuse-widget-table { margin-top: 30px; }
+.fuse-widget-table .table-container { overflow: hidden; border: 1px solid #6D6D6D; border-radius: 20px; }
+.fuse-widget-table .table-content { overflow: auto; }
 .fuse-widget-table table { width: 100%; border-collapse: collapse; }
 .fuse-widget-table thead th { font-weight: 700; font-family: var(--font-family-headings); color: var(--white); background: #224034; }
 .fuse-widget-table th,
