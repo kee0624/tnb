@@ -162,8 +162,26 @@
 .fuse-sustainability-pathway .pathway-body li h3 { font-size: 20px; line-height: 1.2; }
 .fuse-sustainability-pathway .pathway-body li span { display: block; margin-top: 120px; font-size: 60px; font-family: var(--font-family-headings); font-weight: 700; line-height: normal; }
 
-.fuse-sustainability-practice .practice-content { padding: 80px 60px; background: #E8F8E0; border-radius: 20px; }
+.fuse-sustainability-practice { position: relative; }
+.fuse-sustainability-practice .practice-content { gap: 40px; display: flex; flex-wrap: wrap; padding: 80px 60px; background: #E8F8E0; border-radius: 20px; }
+.fuse-sustainability-practice .badge { position: absolute; top: 0; }
+.fuse-sustainability-practice .practice-body { position: relative; display: flex; align-items: center; justify-content: space-between; width: calc(60% - 40px); }
+.fuse-sustainability-practice .practice-body small { display: block; font-size: 26px; font-weight: 700; font-family: var(--font-family-headings); color: var(--mindful-green-500); }
+.fuse-sustainability-practice .practice-body h2 { margin-top: 18px; font-size: 42px; line-height: 48px; }
+.fuse-sustainability-practice .practice-body p { margin-top: 12px; font-size: 20px; line-height: 32px; color: #1A1A1A; }
+.fuse-sustainability-practice .practice-header { padding-top: 48px; }
+.fuse-sustainability-practice .practice-img { overflow: hidden; width: 40%;  }
+.fuse-sustainability-practice .practice-img img { display: block; width: 100%; border-radius: 20px; }
 
+.fuse-sustainability-practice .scroll-step { height: 100vh; }
+.fuse-sustainability-practice .test {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: #eaf9df;
+}
 
 .fuse-sustainability-indicators { padding: 160px 0 60px; }
 .fuse-sustainability-indicators .indicators-content { display: flex; flex-wrap: wrap; gap: 20px; }
@@ -228,6 +246,13 @@
   .fuse-sustainability-leading blockquote .blockquote-author { gap: 16px; }
   .fuse-sustainability-leading blockquote .blockquote-author-name { font-size: 16px; line-height: 24px; }
   .fuse-sustainability-leading blockquote .blockquote-author-position { font-size: 14px; line-height: 20px; }
+
+  .fuse-sustainability-practice .practice-body small { font-size: 18px; line-height: 28px; }
+  .fuse-sustainability-practice .practice-body h2 { margin-top: 8px; font-size: 24px; line-height: 28px; }
+  .fuse-sustainability-practice .practice-body p { margin-top: 8px; font-size: 16px; line-height: 24px; }
+  .fuse-sustainability-practice .practice-header { padding-top: 32px; }
+  .fuse-sustainability-practice .practice-content { gap: 20px; }
+  .fuse-sustainability-practice .practice-body { width: calc(60% - 20px); }
 
   .fuse-sustainability-landscape { padding: 50px 0; }
   .fuse-sustainability-landscape .landscape-content { gap: 24px; }
@@ -298,6 +323,13 @@
   .fuse-sustainability-leading .leading-content { grid-template-columns: repeat(1, 1fr); }
   .fuse-sustainability-leading .leading-header { grid-column: span 1; max-width: none; }
   .fuse-sustainability-leading blockquote { margin-top: 72px; padding: 24px; background: var(--white); border-radius: 20px; box-shadow: 0 1px 3px -1px rgba(0,0,0,.4); }
+
+  .fuse-sustainability-practice { background: #E8F8E0; }
+  .fuse-sustainability-practice .container { padding: 50px 20px; }
+  .fuse-sustainability-practice .badge { position: static; }
+  .fuse-sustainability-practice .practice-content { display: block; padding: 0; }
+  .fuse-sustainability-practice .practice-body { display: block; width: 100%; }
+  .fuse-sustainability-practice .practice-img { margin-top: 32px; width: 100%; }
 
   .fuse-sustainability-landscape .landscape-content { grid-template-columns: repeat(1, 1fr);}
   .fuse-sustainability-landscape .landscape-right { padding: 0; }

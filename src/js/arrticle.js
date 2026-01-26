@@ -1,6 +1,5 @@
 import '../css/arrticle.css';
 
-
 const Carousel = {
     init() {
         const $elements = $('.owl-carousel');
@@ -45,7 +44,6 @@ const ScrollSpy = {
         $('body').scrollspy({ target: '.fuse-article-aside .navbar' })
     }
 }
-
 
 Carousel.init();
 ScrollSpy.init();
