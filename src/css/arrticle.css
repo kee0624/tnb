@@ -106,7 +106,7 @@
 
 .fuse-article-aside { width: 418px; margin-bottom: 20px }
 .fuse-article-aside strong { display: block; margin-bottom: 16px; font-size: 18px; line-height: normal; color: #FF6900; }
-.fuse-article-aside .aside-content { padding: 40px; position: sticky; top: 0; background: #E2F2FF; border-radius: 14px; }
+.fuse-article-aside .aside-content { padding: 40px; position: sticky; top: 0; background: #E2F2FF; border-radius: 14px; overflow: auto; max-height: 100vh; }
 .fuse-article-aside .aside-content .navbar { margin-bottom: 0; }
 .fuse-article-aside .aside-content .nav:before,
 .fuse-article-aside .aside-content .nav:after { display: none; }
