@@ -130,7 +130,7 @@
 .fuse-sustainability-landscape .landscape-footer ul { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .fuse-sustainability-landscape .landscape-footer li { position: relative; }
 .fuse-sustainability-landscape .landscape-footer li p { position: absolute; left: 0; bottom: 0; font-weight: 600; font-size: 16px; padding: 16px; width: 100%; color: var(--white); }
-.fuse-sustainability-landscape .landscape-footer img { display: block; width: 100%; border-radius: 20px; }
+.fuse-sustainability-landscape .landscape-footer img { display: block; width: 100%; }
 .fuse-sustainability-landscape .landscape-footer > p { margin-top: 34px; font-size: 24px; line-height: 34px; color: rgba(63, 68, 67, 1); }
 
 .fuse-sustainability-aspiration { padding: 70px 0; color: var(--white); background: #005EAA; background: linear-gradient(180deg,rgba(0, 94, 170, 1) 0%, rgba(0, 38, 68, 1) 100%); }
@@ -263,9 +263,9 @@
   .fuse-sustainability-landscape .landscape-content { gap: 24px; }
   .fuse-sustainability-landscape .landscape-header h2 { font-size: 32px; line-height: 38px; }
   .fuse-sustainability-landscape .landscape-header p { font-size: 16px; line-height: 24px; }
-  .fuse-sustainability-landscape .landscape-footer > p { font-size: 16px; line-height: 26px; }
   .fuse-sustainability-landscape .landscape-figure h3 { font-size: 24px; line-height: 28px; }
   .fuse-sustainability-landscape .landscape-figure span { font-size: 16px; line-height: 24px; }
+  .fuse-sustainability-landscape .landscape-footer > p { font-size: 16px; line-height: 26px; }
   .fuse-sustainability-landscape .landscape-footer ul { gap: 16px; }
   .fuse-sustainability-landscape .landscape-footer li p { padding: 14px; font-size: 12px; line-height: normal; }
 
