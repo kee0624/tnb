@@ -10,7 +10,9 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: './src/index.html',
-        article: './src/article.html',
+        article1: './src/article-1.html',
+        article2: './src/article-2.html',
+        article3: './src/article-3.html',
       }
     }
   },
